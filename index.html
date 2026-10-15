@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fawwaz Aboalhasan | Humanitarian MEAL Coordinator | MEAL systems, data quality and consortium reporting</title>
+<meta name="description" content="Fawwaz Aboalhasan: 9 years of humanitarian MEAL in six countries, including Iraq and Ukraine. MEAL systems, data quality assessments, evaluation, accountability, responsible data and donor reporting with international and national NGOs.">
+<meta name="author" content="Fawwaz Aboalhasan">
+<meta property="og:title" content="Fawwaz Aboalhasan | Humanitarian MEAL Coordinator">
+<meta property="og:description" content="9 years of humanitarian MEAL in six countries, including Iraq and Ukraine: MEAL systems, data quality, evaluation, consortium reporting and responsible data.">
+<meta property="og:type" content="profile">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%2322303C'/><text x='50' y='66' font-family='Arial' font-weight='700' font-size='46' fill='white' text-anchor='middle'>FA</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink: #22303C;
+  --text: #3A4650;
+  --muted: #64707A;
+  --rule: #D3D9DD;
+  --panel: #F2F4F5;
+  --paper: #FFFFFF;
+  --green: #2F6B4F;
+  --green-soft: #E6EFEA;
+  --measure: 68ch;
+  --wide: 1080px;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 17px; scroll-behavior: smooth; scroll-padding-top: 1rem; }
+body {
+  font-family: 'Public Sans', 'Segoe UI', Arial, sans-serif;
+  font-variant-numeric: tabular-nums lining-nums;
+  color: var(--text);
+  background: var(--paper);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--green); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:hover { color: var(--ink); }
+:focus-visible { outline: 3px solid var(--green); outline-offset: 2px; }
+.wrap { max-width: var(--wide); margin: 0 auto; padding: 0 24px; }
+
+/* Top bar */
+.topbar { border-bottom: 1px solid var(--rule); }
+.topbar .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: .5rem 2rem; padding-top: 1rem; padding-bottom: 1rem; }
+.topbar strong { color: var(--ink); font-weight: 700; }
+.topbar nav { display: flex; flex-wrap: wrap; gap: .25rem 1.4rem; font-size: .88rem; }
+.topbar nav a { color: var(--muted); text-decoration: none; }
+.topbar nav a:hover { color: var(--ink); text-decoration: underline; }
+
+/* Intro */
+.intro { padding: 4.5rem 0 3.5rem; }
+.intro h1 { font-size: 2.6rem; line-height: 1.12; font-weight: 700; color: var(--ink); letter-spacing: -0.015em; }
+.intro .role { font-size: 1.2rem; color: var(--ink); margin-top: .5rem; }
+.intro .lead { max-width: var(--measure); font-size: 1.08rem; margin-top: 1.6rem; }
+.status { display: flex; flex-wrap: wrap; gap: .6rem 2.2rem; margin-top: 2rem; font-size: .92rem; }
+.status div { padding-left: .8rem; border-left: 3px solid var(--green); }
+.status b { display: block; color: var(--ink); font-weight: 600; }
+.intro .actions { margin-top: 2.2rem; display: flex; flex-wrap: wrap; gap: .8rem; }
+.btn { display: inline-block; padding: .7rem 1.3rem; font-weight: 600; font-size: .95rem; text-decoration: none; border: 2px solid var(--ink); color: var(--ink); }
+.btn:hover { background: var(--ink); color: #fff; }
+.btn.primary { background: var(--ink); color: #fff; }
+.btn.primary:hover { background: var(--green); border-color: var(--green); }
+
+/* Key figures */
+.figures { background: var(--panel); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+.figures dl { display: grid; grid-template-columns: repeat(6, 1fr); }
+.figures dl > div { padding: 1.4rem 1rem 1.3rem 0; }
+.figures dl > div + div { padding-left: 1rem; border-left: 1px solid var(--rule); }
+.figures dd { font-size: 1.65rem; font-weight: 700; color: var(--ink); line-height: 1.1; }
+.figures dt { font-size: .82rem; color: var(--muted); margin-top: .35rem; line-height: 1.35; }
+.figures dl > div { display: flex; flex-direction: column-reverse; justify-content: flex-end; }
+
+/* Sections */
+section.block { padding: 4rem 0; }
+section.block + section.block { border-top: 1px solid var(--rule); }
+.block h2 { font-size: 1.7rem; line-height: 1.2; font-weight: 700; color: var(--ink); letter-spacing: -0.01em; }
+.block .sub { max-width: var(--measure); color: var(--muted); margin-top: .6rem; }
+.block > .wrap > .body { margin-top: 2.2rem; }
+
+/* Results matrix */
+.matrix { width: 100%; border-collapse: collapse; font-size: .95rem; }
+.matrix caption { text-align: left; }
+.matrix th, .matrix td { text-align: left; vertical-align: top; padding: 1.1rem 1.2rem 1.1rem 0; border-bottom: 1px solid var(--rule); }
+.matrix thead th { font-size: .82rem; font-weight: 600; color: var(--muted); border-bottom: 2px solid var(--ink); padding-top: 0; padding-bottom: .6rem; }
+.matrix tbody th { width: 26%; color: var(--ink); font-weight: 700; font-size: 1rem; line-height: 1.35; }
+.matrix td ul { list-style: none; }
+.matrix td li { padding-left: 1rem; position: relative; margin-bottom: .35rem; }
+.matrix td li:last-child { margin-bottom: 0; }
+.matrix td li::before { content: ''; position: absolute; left: 0; top: .62em; width: 6px; height: 2px; background: var(--green); }
+.matrix td.ref { width: 9%; padding-right: 0; white-space: nowrap; font-size: .9rem; }
+
+/* Case studies */
+.case { display: grid; grid-template-columns: 250px 1fr; gap: 0 3rem; padding: 2.6rem 0; border-top: 1px solid var(--rule); }
+.case:first-child { border-top: 2px solid var(--ink); }
+.case h3 { grid-column: 1 / -1; font-size: 1.3rem; line-height: 1.3; color: var(--ink); font-weight: 700; margin-bottom: 1.4rem; max-width: 40ch; }
+.case h3 .n { display: block; font-size: .85rem; font-weight: 600; color: var(--green); margin-bottom: .3rem; letter-spacing: 0; }
+.facts { font-size: .88rem; align-self: start; background: var(--panel); padding: 1.1rem 1.2rem; }
+.facts div + div { margin-top: .75rem; }
+.facts dt { color: var(--muted); font-size: .8rem; }
+.facts dd { color: var(--ink); font-weight: 600; line-height: 1.4; }
+.narrative { max-width: var(--measure); }
+.narrative h4 { font-size: .95rem; color: var(--ink); font-weight: 700; margin-top: 1.2rem; margin-bottom: .3rem; }
+.narrative h4:first-child { margin-top: 0; }
+.narrative ul { list-style: none; }
+.narrative li { padding-left: 1rem; position: relative; margin-bottom: .35rem; }
+.narrative li::before { content: ''; position: absolute; left: 0; top: .66em; width: 6px; height: 2px; background: var(--ink); }
+.outcome { margin-top: 1.4rem; padding: .9rem 1.1rem; background: var(--green-soft); border-left: 4px solid var(--green); color: var(--ink); }
+.outcome b { color: var(--green); }
+
+/* Approach */
+.principles { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.8rem 3rem; }
+.principles h3 { font-size: 1.02rem; color: var(--ink); font-weight: 700; margin-bottom: .3rem; }
+.principles p { font-size: .96rem; max-width: 52ch; }
+
+/* Career table */
+.career { width: 100%; border-collapse: collapse; font-size: .93rem; }
+.career th, .career td { text-align: left; vertical-align: top; padding: .85rem 1.2rem .85rem 0; border-bottom: 1px solid var(--rule); }
+.career thead th { font-size: .82rem; font-weight: 600; color: var(--muted); border-bottom: 2px solid var(--ink); padding-top: 0; padding-bottom: .6rem; }
+.career td:first-child { white-space: nowrap; color: var(--muted); width: 17%; }
+.career td.r { color: var(--ink); font-weight: 600; width: 24%; }
+.career td.o { width: 30%; }
+
+/* Credentials */
+.creds { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem 3rem; }
+.creds h3 { font-size: 1rem; color: var(--ink); font-weight: 700; padding-bottom: .5rem; margin-bottom: .7rem; border-bottom: 2px solid var(--ink); }
+.creds ul { list-style: none; font-size: .93rem; }
+.creds li { padding: .28rem 0; border-bottom: 1px solid var(--rule); }
+.creds li:last-child { border-bottom: 0; }
+.creds .deg { color: var(--ink); font-weight: 600; }
+
+/* Contact */
+.contact { background: var(--ink); color: #DCE3E8; padding: 3.5rem 0; }
+.contact h2 { color: #fff; font-size: 1.7rem; }
+.contact p { max-width: var(--measure); margin-top: .7rem; }
+.contact .actions { margin-top: 1.6rem; display: flex; flex-wrap: wrap; gap: 1rem 2rem; align-items: center; }
+.contact .btn { border-color: #fff; color: #fff; }
+.contact .btn:hover { background: #fff; color: var(--ink); }
+.contact a.mail { color: #fff; }
+footer { background: var(--ink); color: #9AA7B1; font-size: .8rem; padding: 0 0 2rem; }
+footer .wrap { border-top: 1px solid #3A4A57; padding-top: 1.2rem; }
+
+/* Responsive */
+@media (max-width: 900px) {
+  .figures dl { grid-template-columns: repeat(3, 1fr); }
+  .figures dl > div:nth-child(4) { border-left: 0; padding-left: 0; }
+  .figures dl > div:nth-child(n+4) { border-top: 1px solid var(--rule); }
+  .case { grid-template-columns: 1fr; }
+  .facts { margin-bottom: 1.4rem; display: grid; grid-template-columns: repeat(2, 1fr); gap: .75rem 1.2rem; }
+  .facts div + div { margin-top: 0; }
+  .creds { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 680px) {
+  html { font-size: 16px; }
+  .intro { padding: 3rem 0 2.5rem; }
+  .intro h1 { font-size: 2rem; }
+  .figures dl { grid-template-columns: repeat(2, 1fr); }
+  .figures dl > div { border-left: 0 !important; padding-left: 0 !important; border-top: 1px solid var(--rule); }
+  .figures dl > div:nth-child(-n+2) { border-top: 0; }
+  .figures dl > div:nth-child(even) { padding-left: 1rem !important; border-left: 1px solid var(--rule) !important; }
+  .matrix thead { display: none; }
+  .matrix, .matrix tbody, .matrix tr, .matrix th, .matrix td { display: block; width: 100% !important; }
+  .matrix tr { border-bottom: 1px solid var(--rule); padding: 1rem 0; }
+  .matrix tbody tr:first-child { border-top: 2px solid var(--ink); }
+  .matrix th, .matrix td { border: 0; padding: 0 0 .5rem; }
+  .principles, .creds { grid-template-columns: 1fr; }
+  .facts { grid-template-columns: 1fr; }
+  .career thead { display: none; }
+  .career, .career tbody, .career tr, .career td { display: block; width: 100% !important; }
+  .career tr { padding: .9rem 0; border-bottom: 1px solid var(--rule); }
+  .career td { border: 0; padding: 0; }
+}
+@media print {
+  .topbar nav, .actions { display: none; }
+  .contact, footer { background: none; color: var(--text); }
+  .contact h2, .contact a.mail { color: var(--ink); }
+  .case, .matrix tr { break-inside: avoid; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <strong>Fawwaz Aboalhasan</strong>
+    <nav aria-label="Page sections">
+      <a href="#expertise">Expertise</a>
+      <a href="#cases">Case studies</a>
+      <a href="#approach">Approach</a>
+      <a href="#career">Career</a>
+      <a href="#credentials">Credentials</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="intro">
+  <div class="wrap">
+    <h1>Fawwaz Aboalhasan</h1>
+    <p class="role">Humanitarian MEAL Coordinator: monitoring, evaluation, reporting and learning, data quality and consortium reporting</p>
+    <p class="lead">Nine years of humanitarian MEAL with international and national NGOs in emergency, displacement and refugee contexts, across six countries including Iraq and Ukraine. My work runs from frontline data collection in the Mosul emergency response to headquarters MEAL leadership in Budapest. I build MEAL systems, run data quality assessments, lead evaluations and consortium reporting, and apply responsible, protection-sensitive data practices, so that evidence informs programme decisions and adaptation.</p>
+    <div class="status">
+      <div><b>Available immediately</b>International deployment, including hardship and non-family duty stations</div>
+      <div><b>Based in Erbil, Iraq</b>Arabic (native), English (fluent)</div>
+    </div>
+    <div class="actions">
+      <a class="btn primary" href="#cases">Read the case studies</a>
+      <a class="btn" href="mailto:fawwaz.m.aboalhasan@gmail.com">Email me</a>
+    </div>
+  </div>
+</section>
+
+<section class="figures" aria-label="Key figures">
+  <div class="wrap">
+    <dl>
+      <div><dt>Years in humanitarian MEAL</dt><dd>9</dd></div>
+      <div><dt>Portfolio led, 16+ projects</dt><dd>~US$3M</dd></div>
+      <div><dt>Countries in one portfolio</dt><dd>6</dd></div>
+      <div><dt>Institutional donors</dt><dd>10+</dd></div>
+      <div><dt>Largest team managed</dt><dd>28</dd></div>
+      <div><dt>MEAL staff and enumerators trained and managed, 5 organizations</dt><dd>75+</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="block" id="expertise">
+  <div class="wrap">
+    <h2>Expertise</h2>
+    <p class="sub">The core MEAL functions I cover, and where each one is shown in my work.</p>
+    <div class="body">
+      <table class="matrix">
+        <thead><tr><th scope="col">Function</th><th scope="col">Evidence from my work</th><th scope="col">Case</th></tr></thead>
+        <tbody>
+          <tr>
+            <th scope="row">MEAL strategy and systems</th>
+            <td><ul>
+              <li>Led the MEAL strategy and budget for a ~US$3M, 16+ project portfolio across 6 countries as a member of the headquarters Senior Management Team.</li>
+              <li>Built a complete MEAL system from scratch for a &euro;788K GIZ/BMZ project in 4 governorates.</li>
+              <li>Led Theory of Change and logframe drafting for US Department of State, EU CERV, ACT Alliance and GIZ/BMZ-funded programmes.</li>
+              <li>Built performance monitoring plans, a consolidated indicator tracker across partners and countries, KoboToolbox forms and Power BI dashboards.</li>
+            </ul></td>
+            <td class="ref"><a href="#case-1">Case 1</a>, <a href="#case-2">2</a></td>
+          </tr>
+          <tr>
+            <th scope="row">Monitoring and data collection</th>
+            <td><ul>
+              <li>As Coordinator (HIA, Bashtabiya), designed and oversaw field monitoring, surveys, FGDs, KIIs and PDM, including sampling design and sample size calculation.</li>
+              <li>As MEAL Officer (Terre des hommes, INTERSOS), conducted field monitoring, surveys, FGDs, KIIs and PDM; at INTERSOS, monitored health services with quality-of-care checklists and patient satisfaction surveys.</li>
+              <li>Designed or analysed KAP surveys at INTERSOS, Terre des hommes and Bashtabiya.</li>
+              <li>As MEAL Assistant and Enumerator, carried out field data collection, protection monitoring and cash PDM in the Mosul response.</li>
+            </ul></td>
+            <td class="ref"><a href="#case-2">Case 2</a>, <a href="#case-6">6</a></td>
+          </tr>
+          <tr>
+            <th scope="row">Evaluation, assessment and learning</th>
+            <td><ul>
+              <li>Led an independent evaluation of a &euro;480K programme (6,242 beneficiaries, 3 governorates) from ToR to report, managing the process and contributing to the evaluation work.</li>
+              <li>Led baseline, mid-term and endline assessments; as MEAL Officer, contributed to evaluations and assessments.</li>
+              <li>Learning reviews, After Action Reviews, lessons-learned sessions and learning briefs; findings informed programme adaptation.</li>
+            </ul></td>
+            <td class="ref"><a href="#case-3">Case 3</a>, <a href="#case-2">2</a></td>
+          </tr>
+          <tr>
+            <th scope="row">Accountability and safeguarding</th>
+            <td><ul>
+              <li>Built a CHS-aligned feedback and complaints mechanism across 4 governorates, and set up feedback channels at a refugee centre where none existed.</li>
+              <li>Referred sensitive and PSEA complaints to safeguarding focal points and restricted access to personal data.</li>
+              <li>Responsible data practice: informed consent built into data collection tools; confidentiality, anonymization, access controls and secure storage of personal data.</li>
+            </ul></td>
+            <td class="ref"><a href="#case-2">Case 2</a>, <a href="#case-5">5</a></td>
+          </tr>
+          <tr>
+            <th scope="row">Data quality and analysis</th>
+            <td><ul>
+              <li>Ran data quality assessments (DQAs) across 6 consortium partners, verifying partner data against source documents and tracking corrective actions.</li>
+              <li>Cleaned and analysed data in R and Python, and oversaw statistical analysis (Stata, R, Python, SPSS), using Data Analysis Plans and cleaning logs.</li>
+              <li>Consolidated partner and country data into common datasets and an indicator tracker (Excel/Power Query, Power BI).</li>
+              <li>Tracked geographic and population coverage by sex, age, disability and location, and flagged gaps to management.</li>
+            </ul></td>
+            <td class="ref"><a href="#case-4">Case 4</a>, <a href="#case-2">2</a></td>
+          </tr>
+          <tr>
+            <th scope="row">Reporting, donors and proposals</th>
+            <td><ul>
+              <li>Prepared aggregated portfolio reporting across projects and countries, project MEAL reports, and narrative and results reports to GIZ/BMZ.</li>
+              <li>Represented HIA on MEAL in donor meetings; wrote executive summaries and presented findings to management and donors.</li>
+              <li>Wrote the MEAL sections of 3 donor proposals and prepared M&amp;E budgets for proposals.</li>
+              <li>Worked with 10+ institutional donors, including ECHO, EU, US Department of State, UNICEF and GIZ/BMZ.</li>
+            </ul></td>
+            <td class="ref"><a href="#case-1">Case 1</a>, <a href="#case-2">2</a></td>
+          </tr>
+          <tr>
+            <th scope="row">Leadership and capacity building</th>
+            <td><ul>
+              <li>Trained and managed 75+ MEAL staff and enumerators across 5 organizations; strengthened MEAL capacity of ~20 headquarters staff and, remotely, the Iraq and Ukraine country teams.</li>
+              <li>Recruitment, induction, performance appraisals, individual development plans and leave management; one-to-one mentoring of MEAL officers and assistants.</li>
+              <li>Coached 6 partner MEAL focal points; trained staff, partners and government counterparts on data collection, data quality and AAP.</li>
+            </ul></td>
+            <td class="ref"><a href="#case-1">Case 1</a>, <a href="#case-2">2</a>, <a href="#case-4">4</a>, <a href="#case-6">6</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="cases">
+  <div class="wrap">
+    <h2>Case studies</h2>
+    <p class="sub">Headquarters, field and partner work. Each entry sets out the facts, what I did and the outcome.</p>
+    <div class="body">
+
+      <article class="case" id="case-1">
+        <h3><span class="n">Case 1</span>Multi-country MEAL strategy and reporting systems</h3>
+        <dl class="facts">
+          <div><dt>Organization</dt><dd>Hungarian Interchurch Aid (HIA)</dd></div>
+          <div><dt>My role</dt><dd>MEAL Coordinator, Headquarters; Senior Management Team</dd></div>
+          <div><dt>Period</dt><dd>Nov 2025 to Aug 2026</dd></div>
+          <div><dt>Scale</dt><dd>~US$3M portfolio; 16+ projects; 6 countries</dd></div>
+          <div><dt>Donors</dt><dd>US Department of State, EU (CERV), ESF, ACT Alliance, Hungary Helps Agency</dd></div>
+        </dl>
+        <div class="narrative">
+          <h4>Context</h4>
+          <p>HIA's internationally funded portfolio covered Iraq, Ukraine, Romania, Greece, Latvia and Hungary. I was MEAL lead for all internationally funded projects.</p>
+          <h4>What I did</h4>
+          <ul>
+            <li>Led the portfolio MEAL strategy and budget as a member of the headquarters Senior Management Team, and represented HIA on MEAL in donor meetings.</li>
+            <li>Led Theory of Change and logframe drafting for Bridges of Resilience (US Department of State, US$1M, Ukraine), the EU CERV consortium and 12 ACT Alliance sub-grants, and designed the assessment frameworks for Bridges of Resilience and the ACT sub-grants.</li>
+            <li>Built portfolio tools: performance monitoring plans, a consolidated indicator tracker across partners and countries, KoboToolbox forms, Power BI dashboards and cross-mission donor reporting systems.</li>
+            <li>Designed sampling and oversaw PDM, surveys, FGDs and KIIs; consolidated partner and country data and analysed it in R and Python, using Data Analysis Plans, cleaning logs and data quality assessments (DQAs).</li>
+            <li>Prepared aggregated portfolio reporting and project MEAL reports, contributed to donor reports, and wrote the MEAL sections of 3 donor proposals.</li>
+            <li>Strengthened MEAL capacity of ~20 headquarters staff in the International Department and Fundraising team through training, and provided remote MEAL capacity support to the Iraq and Ukraine country teams.</li>
+            <li>Wrote learning briefs and presented learning to HQ and regional teams; carried out close-out: final donor reports, learning events, data archiving and handover.</li>
+          </ul>
+          <p class="outcome"><b>Outcome.</b> Portfolio MEAL strategy, tools and cross-mission donor reporting systems in place for 16+ projects in 6 countries.</p>
+        </div>
+      </article>
+
+      <article class="case" id="case-2">
+        <h3><span class="n">Case 2</span>Building a MEAL and accountability system from scratch</h3>
+        <dl class="facts">
+          <div><dt>Organization</dt><dd>Bashtabiya NGO</dd></div>
+          <div><dt>My role</dt><dd>MEAL and Grant Coordinator; led a team of 28 staff</dd></div>
+          <div><dt>Period</dt><dd>Jun 2023 to Jul 2024</dd></div>
+          <div><dt>Location</dt><dd>Baghdad; 4 governorates of Iraq</dd></div>
+          <div><dt>Scale</dt><dd>&euro;788K sub-grant</dd></div>
+          <div><dt>Donor</dt><dd>GIZ/BMZ</dd></div>
+        </dl>
+        <div class="narrative">
+          <h4>Context</h4>
+          <p>A GIZ/BMZ sub-grant covering Education, Livelihoods, Agriculture and Social Cohesion, implemented by a national NGO with no existing MEAL system.</p>
+          <h4>What I did</h4>
+          <ul>
+            <li>Built the MEAL system: Theory of Change and logframe, KoboToolbox forms with informed consent, indicator tracking, databases, MEAL SOPs, reporting templates and the MEAL budget.</li>
+            <li>Established a CHS-aligned feedback and complaints mechanism; analysed feedback trends for management; referred sensitive and PSEA complaints to safeguarding focal points and restricted access to personal data.</li>
+            <li>Led baseline, mid-term and endline assessments, and designed sampling for them and for KAP surveys; oversaw field monitoring, PDM and statistical analysis (Stata, R, Python, SPSS); ran DQAs and built Power BI dashboards.</li>
+            <li>Tracked geographic and population coverage by sex, age, disability and location, and flagged gaps to management.</li>
+            <li>Led a team of 28 staff and recruited part of the team; trained staff, partners and government counterparts on data collection, data quality and AAP; assessed partner MEAL capacity and ran regular partner meetings.</li>
+            <li>Represented Bashtabiya in Protection, Education and Health cluster meetings; facilitated learning reviews and tracked follow-up of recommendations.</li>
+            <li>Prepared project MEAL reports and narrative and results reports to GIZ/BMZ, and carried out close-out: final donor reports, learning events, data archiving and handover.</li>
+          </ul>
+          <p class="outcome"><b>Outcome.</b> A complete MEAL and accountability system for a &euro;788K project in 4 governorates; findings informed programme adaptation.</p>
+        </div>
+      </article>
+
+      <article class="case" id="case-3">
+        <h3><span class="n">Case 3</span>Leading an independent evaluation from ToR to report</h3>
+        <dl class="facts">
+          <div><dt>Organization</dt><dd>Hungarian Interchurch Aid (HIA)</dd></div>
+          <div><dt>My role</dt><dd>Evaluation lead, full cycle: managed the process and contributed to the evaluation work</dd></div>
+          <div><dt>Location</dt><dd>Northern Iraq, 3 governorates</dd></div>
+          <div><dt>Scale</dt><dd>&euro;480K programme; 6,242 beneficiaries</dd></div>
+        </dl>
+        <div class="narrative">
+          <h4>Context</h4>
+          <p>Independent evaluation of a &euro;480K programme reaching 6,242 beneficiaries in 3 governorates of Northern Iraq.</p>
+          <h4>What I did</h4>
+          <ul>
+            <li>Developed the Terms of Reference and methodology.</li>
+            <li>Managed the evaluation process and contributed to the evaluation work.</li>
+            <li>Oversaw data collection, analysis and report drafting.</li>
+            <li>Produced actionable learning recommendations.</li>
+          </ul>
+          <p class="outcome"><b>Outcome.</b> Evaluation completed from ToR to report, with actionable learning recommendations.</p>
+        </div>
+      </article>
+
+      <article class="case" id="case-4">
+        <h3><span class="n">Case 4</span>Harmonizing MEAL across consortium partners</h3>
+        <dl class="facts">
+          <div><dt>Organization</dt><dd>Hungarian Interchurch Aid (HIA)</dd></div>
+          <div><dt>Programmes</dt><dd>EU CERV (&euro;656K, 4 countries); ESF HEART (&euro;583K, 2 countries)</dd></div>
+          <div><dt>Partners</dt><dd>6</dd></div>
+          <div><dt>Donors</dt><dd>EU (CERV), ESF</dd></div>
+        </dl>
+        <div class="narrative">
+          <h4>Context</h4>
+          <p>Two EU-funded consortium programmes implemented with 6 partners in Hungary, Romania, Greece and Latvia.</p>
+          <h4>What I did</h4>
+          <ul>
+            <li>Designed the M&amp;E frameworks and harmonized indicators and reporting templates across the 6 partners.</li>
+            <li>Wrote MEAL guidance, SOPs and training materials for the partners.</li>
+            <li>Assessed partner MEAL capacity, ran regular partner meetings and reviewed partner reports.</li>
+            <li>Coached the 6 partner MEAL focal points and ran DQAs verifying partner data against source documents.</li>
+          </ul>
+          <p class="outcome"><b>Outcome.</b> Common M&amp;E frameworks, indicator definitions and reporting templates across 6 partners in 4 countries, with partner data verified against source documents.</p>
+        </div>
+      </article>
+
+      <article class="case" id="case-5">
+        <h3><span class="n">Case 5</span>Setting up MEAL and feedback channels at a refugee centre</h3>
+        <dl class="facts">
+          <div><dt>Organization</dt><dd>Hungarian Interchurch Aid (HIA)</dd></div>
+          <div><dt>My role</dt><dd>MEAL Coordinator, working on site alongside headquarters duties</dd></div>
+          <div><dt>Location</dt><dd>Refugee centre, Budapest (in person)</dd></div>
+          <div><dt>Funding</dt><dd>Including ESF-funded activities</dd></div>
+        </dl>
+        <div class="narrative">
+          <h4>Context</h4>
+          <p>A Budapest refugee centre had no MEAL arrangements in place.</p>
+          <h4>What I did</h4>
+          <ul>
+            <li>Set up MEAL at the centre, including for ESF-funded activities.</li>
+            <li>Led monitoring visits and refugee consultations.</li>
+            <li>Established feedback channels for refugees.</li>
+            <li>Delivered MEAL training for refugee centre staff.</li>
+          </ul>
+          <p class="outcome"><b>Outcome.</b> MEAL and feedback channels in place at a centre that previously had none; centre staff trained.</p>
+        </div>
+      </article>
+
+      <article class="case" id="case-6">
+        <h3><span class="n">Case 6</span>Field foundation: data collection, monitoring and PDM in Ninawa</h3>
+        <dl class="facts">
+          <div><dt>Organizations</dt><dd>INTERSOS, DRC, Save the Children, Terre des hommes</dd></div>
+          <div><dt>My role</dt><dd>Enumerator, then MEAL Assistant, then MEAL Officer</dd></div>
+          <div><dt>Period</dt><dd>Sep 2016 to Jun 2023</dd></div>
+          <div><dt>Location</dt><dd>Ninawa and Erbil, Iraq</dd></div>
+          <div><dt>Donors</dt><dd>ECHO, UNICEF, UNHCR, SDC, ECW, AICS, EU, Stichting Vluchteling</dd></div>
+        </dl>
+        <div class="narrative">
+          <h4>Context</h4>
+          <p>Emergency and protracted response during and after the Mosul military operation, including in Ba'aj, Telafar and the Jeddah IDP camps.</p>
+          <h4>What I did</h4>
+          <ul>
+            <li>INTERSOS (Enumerator): household data collection through protection monitoring interviews with displaced families.</li>
+            <li>DRC and Save the Children (MEAL Assistant): protection monitoring, cash PDM and needs assessments, contributing to the Cash Consortium of Iraq (DRC); Child Protection and PSS monitoring (Save the Children); managed and trained teams of 10 and 15+ enumerators.</li>
+            <li>INTERSOS (MEAL Officer): monitored health and protection programmes in Ba'aj, Telafar and the Jeddah IDP camps using health facility data, quality-of-care checklists, patient satisfaction and KAP surveys; tracked and reported health indicators; supervised 2 MEAL Assistants and 12 enumerators.</li>
+            <li>Terre des hommes (MEAL Officer): developed KoboToolbox tools for the SDC-funded justice programme (~1,000 children per year); indicator tracking disaggregated by sex, age and disability; MEAL inputs to the ECW Multi-Year Resilience Programme (US$23M, 192,000 children); adapted monitoring for COVID-19 remote programming; supervised 2 MEAL Assistants and up to 10 enumerators.</li>
+            <li>In both MEAL Officer roles: field monitoring, PDM, accountability activities and assessments, applying sampling methods; DQAs and source verification, Power BI dashboards and learning reviews that informed programme adjustments; contributed to evaluations and to monitoring and donor reports; trained staff, partners and government counterparts on data collection and AAP.</li>
+          </ul>
+          <p class="outcome"><b>Outcome.</b> Progressed from enumerator to MEAL Officer, building hands-on experience in every stage of MEAL in emergency and protracted settings.</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="block" id="approach">
+  <div class="wrap">
+    <h2>How I work</h2>
+    <p class="sub">The principles I apply to MEAL in any programme.</p>
+    <div class="body principles">
+      <div><h3>Fit for purpose</h3><p>Keep MEAL proportionate to the programme, its modality and its risks, and build on tools that already work.</p></div>
+      <div><h3>Quality at the source</h3><p>Clear definitions, trained teams, spot checks, DQAs and verification against source documents before any figure is used or reported.</p></div>
+      <div><h3>Safe and accountable</h3><p>Feedback channels people can actually use; informed consent, minimal and anonymized personal data with controlled access; and sensitive and PSEA cases routed to safeguarding, never to routine reports.</p></div>
+      <div><h3>Evidence that leads to action</h3><p>Short, decision-ready findings for managers and donors that link results, challenges and adaptations.</p></div>
+      <div><h3>Learning as routine</h3><p>Learning reviews and After Action Reviews, with recommendations followed up rather than filed.</p></div>
+      <div><h3>Capacity that stays</h3><p>Train and coach staff and partners so that MEAL continues to work after I leave.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="career">
+  <div class="wrap">
+    <h2>Career</h2>
+    <div class="body">
+      <table class="career">
+        <thead><tr><th scope="col">Period</th><th scope="col">Role</th><th scope="col">Organization and location</th><th scope="col">Focus</th></tr></thead>
+        <tbody>
+          <tr><td>Nov 2025 to Aug 2026</td><td class="r">MEAL Coordinator, Headquarters</td><td class="o">Hungarian Interchurch Aid (HIA), Budapest, Hungary</td><td>In-person posting: on-site refugee programme MEAL in Hungary; remote support to Iraq, Ukraine, Romania, Greece and Latvia; Senior Management Team</td></tr>
+          <tr><td>Jun 2023 to Jul 2024</td><td class="r">MEAL and Grant Coordinator</td><td class="o">Bashtabiya NGO, Baghdad, Iraq (4 governorates)</td><td>Built the MEAL and accountability system for a &euro;788K GIZ/BMZ sub-grant; led a team of 28 staff</td></tr>
+          <tr><td>Mar 2020 to Jun 2023</td><td class="r">MEAL Officer</td><td class="o">Terre des hommes, Lausanne (Tdh), Ninawa, Iraq</td><td>Multi-donor MEAL (SDC, UNICEF, ECW, ECHO) for Child Protection, Education in Emergencies and Access to Justice</td></tr>
+          <tr><td>Feb 2019 to Mar 2020</td><td class="r">MEAL Officer</td><td class="o">INTERSOS, Ninawa, Iraq</td><td>Field monitoring, PDM, assessments and accountability in conflict-affected areas</td></tr>
+          <tr><td>Feb 2018 to Feb 2019</td><td class="r">MEAL Assistant</td><td class="o">Save the Children International, South Ninawa, Iraq</td><td>Child Protection and PSS monitoring; managed and trained 15+ enumerators</td></tr>
+          <tr><td>Jun 2017 to Feb 2018</td><td class="r">MEAL Assistant</td><td class="o">Danish Refugee Council (DRC), Ninawa, Iraq</td><td>Mosul emergency response: protection monitoring, cash PDM and needs assessments; Cash Consortium of Iraq</td></tr>
+          <tr><td>Sep 2016 to Jun 2017</td><td class="r">Enumerator</td><td class="o">INTERSOS, Erbil, Iraq</td><td>Household data collection with newly displaced families during the Mosul military operation</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="credentials">
+  <div class="wrap">
+    <h2>Credentials</h2>
+    <div class="body creds">
+      <div>
+        <h3>Education</h3>
+        <ul>
+          <li><span class="deg">MSc Electrical Engineering</span><br>Budapest University of Technology and Economics, Hungary, 2024 to 2026. Focus on artificial intelligence, machine learning and data analytics.</li>
+          <li><span class="deg">BSc Communication Engineering</span><br>Nineveh University, Iraq</li>
+        </ul>
+        <h3 style="margin-top:1.6rem">Languages</h3>
+        <ul><li>Arabic (native)</li><li>English (fluent)</li></ul>
+        <h3 style="margin-top:1.6rem">Sectors</h3>
+        <ul><li>Education, Livelihoods, Agriculture, Social Cohesion, Health, MHPSS/PSS, Protection/GBV, Child Protection, EiE, WASH, FSL, Cash/CVA, Shelter/NFI, CCCM</li></ul>
+      </div>
+      <div>
+        <h3>Certifications</h3>
+        <ul>
+          <li>MEAL Professional Course (Bioforce)</li>
+          <li>CommCare</li>
+          <li>Core Humanitarian Standard (CHS)</li>
+          <li>Sphere Standards; How to be a Sphere Champion (HLA)</li>
+          <li>PSEAH (DanChurchAid)</li>
+          <li>Age, Gender and Diversity Mainstreaming</li>
+          <li>Humanitarian Access Methodology (SEI)</li>
+          <li>HEAT (Iraq)</li>
+          <li>Human Rights Advocacy (UNHCR)</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Tools and methods</h3>
+        <ul>
+          <li>KoboToolbox / ODK (XLSForm), CommCare, SurveyCTO</li>
+          <li>DHIS2</li>
+          <li>Power BI dashboards, Excel and Power Query</li>
+          <li>MS Word, PowerPoint, Teams, SharePoint</li>
+          <li>SPSS, Stata; R and Python (data cleaning, survey analysis)</li>
+          <li>GIS (QGIS, ArcGIS): maps of coverage, sites and findings</li>
+          <li>Automation (Power Automate, Make, n8n)</li>
+          <li>Responsible data (informed consent, confidentiality, anonymization, access control, secure storage)</li>
+          <li>Sampling design and sample size calculation</li>
+          <li>Data Analysis Plans; cleaning logs; dataset and analysis templates</li>
+          <li>Dataset consolidation across countries and partners</li>
+          <li>Data quality assessments (DQAs) and source verification</li>
+          <li>Logframes, Theory of Change, results frameworks</li>
+          <li>Problem tree and SWOT analysis</li>
+          <li>Indicator tracking (IPTT), performance monitoring plans</li>
+          <li>Evaluations (OECD-DAC), ToR development</li>
+          <li>Baseline, mid-term and endline surveys; needs assessments</li>
+          <li>Mixed methods: surveys, FGDs, KIIs, PDM; KAP surveys</li>
+          <li>Qualitative coding of FGD/KII data; triangulation of qualitative and quantitative findings</li>
+          <li>Participatory evaluation (involving affected communities)</li>
+          <li>Disability data collection (Washington Group questions)</li>
+          <li>Conflict sensitivity in M&amp;E</li>
+          <li>AAP, CHS, Sphere, feedback and complaints mechanisms; PSEA-sensitive complaint referral</li>
+          <li>Proposal MEAL sections; M&amp;E budgets</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <h2>Contact</h2>
+    <p>Available immediately for MEAL roles with international humanitarian and development organizations, including in hardship and non-family duty stations.</p>
+    <div class="actions">
+      <a class="btn" href="mailto:fawwaz.m.aboalhasan@gmail.com">Email me</a>
+      <a class="mail" href="mailto:fawwaz.m.aboalhasan@gmail.com">fawwaz.m.aboalhasan@gmail.com</a>
+    </div>
+  </div>
+</section>
+<footer><div class="wrap">&copy; 2026 Fawwaz Aboalhasan</div></footer>
+
+</body>
+</html>
